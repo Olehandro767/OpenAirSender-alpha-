@@ -1,0 +1,25 @@
+.Btn {
+    -fx-background-radius: 0px;
+    -fx-background-color: #D5D5D5;
+    -fx-text-fill: #2F3640;
+}
+
+.Btn:hover {
+    -fx-background-color: #DCE5E7;
+}
+
+.Btn:pressed {
+    -fx-background-color: #BBC9DD;
+}
+
+.VBox {
+    -fx-background-color: #EEEDEA;
+}
+
+.ScrollPane {
+    -fx-background: #EEF0ED;
+}
+
+.Txt{
+    -fx-fill: #2F3640;
+}

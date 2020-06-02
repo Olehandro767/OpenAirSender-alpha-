@@ -1,0 +1,19 @@
+/*HBox Btn*/
+
+.HBox {
+    -fx-background-color: #003430;
+}
+
+.Btn {
+    -fx-background-radius: 0px;
+    -fx-background-color: #689D99;
+    -fx-text-fill: #FCFFFF;
+}
+
+.Btn:hover {
+    -fx-background-color: #236863;
+}
+
+.Btn:pressed {
+    -fx-background-color: #002421;
+}

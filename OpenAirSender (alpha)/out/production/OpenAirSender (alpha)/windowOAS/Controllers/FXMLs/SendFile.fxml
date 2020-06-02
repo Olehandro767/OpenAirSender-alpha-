@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="BPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="BPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="45.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="BtnClean" mnemonicParsing="false" onAction="#BtnCleanClick" styleClass="Btn" text="Clean">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <AnchorPane prefHeight="45.0" prefWidth="70.0" />
+            <Button fx:id="BtnSend" mnemonicParsing="false" onAction="#BtnSendClick" styleClass="Btn" text="Send">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <AnchorPane prefHeight="45.0" prefWidth="70.0" />
+            <Button fx:id="BtnCLOSE" mnemonicParsing="false" styleClass="Btn" text="Close">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox alignment="CENTER" prefHeight="49.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Txt" text="Send File" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <AnchorPane prefHeight="306.0" prefWidth="30.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane prefHeight="306.0" prefWidth="30.0" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="TextArea" onDragDropped="#TextAreaDragDropped" onDragOver="#TextAreaDragOver" prefHeight="200.0" prefWidth="200.0" />
+            <Pane prefHeight="42.0" prefWidth="540.0" />
+            <ProgressBar fx:id="ProgressBar1" prefWidth="200.0" progress="0.0" visible="false" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
